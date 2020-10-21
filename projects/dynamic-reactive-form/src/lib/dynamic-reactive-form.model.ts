@@ -1,28 +1,28 @@
 import { Validators } from '@angular/forms';
 
 export enum FieldType {
-    CHECKBOX,
-    DATEPICKER,
-    RADIO,
-    SELECTDROPDOWN,
-    SELECTLIST,
-    SLIDETOGGLE,
-    TEXTAREA,
-    TEXTFIELD,
-    SUBHEADER,
-    DIVIDER
+  CHECKBOX,
+  DATEPICKER,
+  RADIO,
+  SELECT_DROPDOWN,
+  SELECT_LIST,
+  SLIDE_TOGGLE,
+  TEXT_AREA,
+  TEXT_FIELD,
+  SUBHEADER,
+  DIVIDER,
 }
 
 export interface Field {
-    name: string;
-    type: FieldType;
-    children?: Field[];
-    defaultValue?: any;
-    disabled?: boolean;
-    options?: string[];
-    parent?: string;
-    validation?: Validators[];
-    visible?: boolean;
+  name: string;
+  type: FieldType;
+  children?: Field[];
+  defaultValue?: any;
+  disabled?: boolean;
+  options?: string[];
+  parent?: string;
+  validation?: Validators[];
+  visible?: boolean;
 }
 
 export interface KeyValuePair {
